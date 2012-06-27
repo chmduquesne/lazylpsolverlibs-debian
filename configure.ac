@@ -1,0 +1,14 @@
+AC_INIT([lazylpsolverlibs], [0.1.42], [chmd@chmd.fr], [lazylpsolverlibs],
+        [https://code.google.com/p/lazylpsolverlibs/])
+AC_PREREQ([2.59])
+AC_PROG_CC
+LT_INIT
+AM_INIT_AUTOMAKE([1.10 no-define])
+AC_SUBST(GENERIC_LIBRARY_VERSION)
+PKG_CHECK_MODULES([GMODULE], [gmodule-2.0 >= 0])
+AC_CONFIG_FILES([Makefile \
+                 lib/pkgconfig/lazycplex.pc \
+                 lib/pkgconfig/lazyxprs.pc \
+                 lib/pkgconfig/lazygurobi.pc \
+                 lib/pkgconfig/lazyglpk.pc])
+AC_OUTPUT
