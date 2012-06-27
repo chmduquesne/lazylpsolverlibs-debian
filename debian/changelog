@@ -1,0 +1,5 @@
+lazylpsolverlibs (0.1.42-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Christophe-Marie Duquesne <chmd@chmd.fr>  Wed, 27 Jun 2012 18:20:57 +0200

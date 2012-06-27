@@ -1,0 +1,29 @@
+Source: lazylpsolverlibs
+Priority: extra
+Maintainer: Christophe-Marie Duquesne <chmd@chmd.fr>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Standards-Version: 3.9.2
+Section: libs
+Homepage: http://code.google.com/p/lazylpsolverlibs/
+#Vcs-Git: git://git.debian.org/collab-maint/lazylpsolverlibs.git
+Vcs-Browser: http://code.google.com/p/lazylpsolverlibs/source/browse/
+
+Package: lazylpsolverlibs-dev
+Section: libdevel
+Architecture: any
+Depends: lazylpsolverlibs1 (= ${binary:Version})
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the development files.
+
+Package: lazylpsolverlibs1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
