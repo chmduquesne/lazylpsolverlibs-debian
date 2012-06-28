@@ -17,7 +17,7 @@ Description: libraries that proxy function calls to commercial lp solvers
  commercial lp solvers. It has been designed to make coin-osi easier to build
  with support for these solvers, but can be useful in other context.
  .
- This package contains the development files.
+ This package contains the development files -- meta-package
 
 Package: liblazycplex-dev
 Section: libdevel
