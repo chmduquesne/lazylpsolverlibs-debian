@@ -7,7 +7,7 @@
 # This special exception was added by Craig Small in version 0.37 of dh-make.
 
 # Uncomment this to turn on verbose mode.
-export DH_VERBOSE=1
+#export DH_VERBOSE=1
 
 %:
 	dh $@
@@ -17,3 +17,6 @@ override_dh_strip:
 	dh_strip -pliblazycplex0 --dbg-package=liblazycplex0-dbg
 	dh_strip -pliblazygurobi0 --dbg-package=liblazygurobi0-dbg
 	dh_strip -pliblazyxprs0 --dbg-package=liblazyxprs0-dbg
+	dh_strip -pliblazycplex-bin
+	dh_strip -pliblazygurobi-bin
+	dh_strip -pliblazyxprs-bin
