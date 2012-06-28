@@ -14,6 +14,6 @@ export DH_VERBOSE=1
 
 .PHONY: override_dh_strip
 override_dh_strip:
-	dh_strip --dbg-package=liblazycplex0
-	dh_strip --dbg-package=liblazygurobi0
-	dh_strip --dbg-package=liblazyxprs0
+	dh_strip -pliblazycplex0 --dbg-package=liblazycplex0-dbg
+	dh_strip -pliblazygurobi0 --dbg-package=liblazygurobi0-dbg
+	dh_strip -pliblazyxprs0 --dbg-package=liblazyxprs0-dbg
