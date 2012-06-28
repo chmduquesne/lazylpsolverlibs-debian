@@ -10,4 +10,10 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ 
+	dh $@
+
+.PHONY: override_dh_strip
+override_dh_strip:
+	dh_strip --dbg-package=liblazycplex0
+	dh_strip --dbg-package=liblazygurobi0
+	dh_strip --dbg-package=liblazyxprs0

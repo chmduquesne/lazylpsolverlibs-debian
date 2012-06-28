@@ -11,7 +11,13 @@ Vcs-Browser: https://github.com/chmduquesne/lazylpsolverlibs-debian
 Package: lazylpsolverlibs-dev
 Section: libdevel
 Architecture: any
-Depends: liblazycplex-dev (= ${binary:Version}), liblazygurobi-dev (= ${binary:Version}), liblazyxprs-dev (= ${binary:Version}), ${misc:Depends}
+Depends: liblazycplex-dev (= ${binary:Version}),
+         liblazygurobi-dev (= ${binary:Version}),
+         liblazyxprs-dev (= ${binary:Version}),
+         liblazycplex-bin (= ${binary:Version}),
+         liblazygurobi-bin (= ${binary:Version}),
+         liblazyxprs-bin (= ${binary:Version}),
+         ${misc:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
@@ -54,6 +60,18 @@ Description: libraries that proxy function calls to commercial lp solvers
  .
  This package contains the lazycplex part of lazylpsolverlibs -- library only
 
+Package: liblazycplex0-dbg
+Section: debug
+Architecture: any
+Depends: liblazycplex0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazycplex part of lazylpsolverlibs -- debugging
+ symbols for the library
+
 Package: liblazygurobi-dev
 Section: libdevel
 Architecture: any
@@ -88,6 +106,18 @@ Description: libraries that proxy function calls to commercial lp solvers
  .
  This package contains the lazygurobi part of lazylpsolverlibs -- library only
 
+Package: liblazygurobi0-dbg
+Section: debug
+Architecture: any
+Depends: liblazygurobi0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazygurobi part of lazylpsolverlibs -- debugging
+ symbols for the library
+
 Package: liblazyxprs-dev
 Section: libdevel
 Architecture: any
@@ -121,3 +151,16 @@ Description: libraries that proxy function calls to commercial lp solvers
  with support for these solvers, but can be useful in other context.
  .
  This package contains the lazyxprs part of lazylpsolverlibs -- library only
+
+Package: liblazyxprs0-dbg
+Section: debug
+Architecture: any
+Depends: liblazyxprs0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazyxprs part of lazylpsolverlibs -- debugging
+ symbols for the library
+
