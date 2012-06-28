@@ -20,7 +20,7 @@ Description: libraries that proxy function calls to commercial lp solvers
  This package contains the development files.
 
 Package: liblazycplex-dev
-Section: libs
+Section: libdevel
 Architecture: any
 Depends: liblazycplex0 (= ${binary:Version}), ${misc:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
@@ -42,7 +42,7 @@ Description: libraries that proxy function calls to commercial lp solvers
  This package contains the lazycplex part of lazylpsolverlibs -- library only
 
 Package: liblazygurobi-dev
-Section: libs
+Section: libdevel
 Architecture: any
 Depends: liblazygurobi0 (= ${binary:Version}), ${misc:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
@@ -64,7 +64,7 @@ Description: libraries that proxy function calls to commercial lp solvers
  This package contains the lazygurobi part of lazylpsolverlibs -- library only
 
 Package: liblazyxprs-dev
-Section: libs
+Section: libdevel
 Architecture: any
 Depends: liblazyxprs0 (= ${binary:Version}), ${misc:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
