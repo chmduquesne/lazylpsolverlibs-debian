@@ -1,0 +1,9 @@
+About dpkg-shlibdeps warnings
+-----------------------------
+Dpkg-shlibdeps complains about useless linking against libpthread.so.0 and
+libm.so.6, claiming they use none of their symbols. While the former
+statement is true, the linking is _not_ useless and was enforced upstream.
+The reason is that the commercial solver libraries are not necessarily
+well packaged: they do not always specify the libraries they need in
+DT_NEEDED. In order to avoid runtime errors because of missing symbols,
+lazylpsolverlibs loads these libraries for them.
