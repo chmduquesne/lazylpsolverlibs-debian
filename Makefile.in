@@ -47,11 +47,11 @@ DIST_COMMON = README $(am__configure_deps) $(dist_data_DATA) \
 	$(top_srcdir)/lib/pkgconfig/lazyglpk.pc.in \
 	$(top_srcdir)/lib/pkgconfig/lazygurobi.pc.in \
 	$(top_srcdir)/lib/pkgconfig/lazyxprs.pc.in \
-	$(top_srcdir)/share/man/lazycplex_test.1.in \
-	$(top_srcdir)/share/man/lazyglpk_test.1.in \
-	$(top_srcdir)/share/man/lazygurobi_test.1.in \
-	$(top_srcdir)/share/man/lazyxprs_test.1.in AUTHORS COPYING \
-	ChangeLog INSTALL NEWS config.guess config.sub depcomp \
+	$(top_srcdir)/share/man/man1/lazycplex_test.1.in \
+	$(top_srcdir)/share/man/man1/lazyglpk_test.1.in \
+	$(top_srcdir)/share/man/man1/lazygurobi_test.1.in \
+	$(top_srcdir)/share/man/man1/lazyxprs_test.1.in AUTHORS \
+	COPYING ChangeLog INSTALL NEWS config.guess config.sub depcomp \
 	install-sh ltmain.sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
@@ -62,9 +62,10 @@ am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
 mkinstalldirs = $(install_sh) -d
 CONFIG_CLEAN_FILES = lib/pkgconfig/lazycplex.pc \
 	lib/pkgconfig/lazyxprs.pc lib/pkgconfig/lazygurobi.pc \
-	lib/pkgconfig/lazyglpk.pc share/man/lazycplex_test.1 \
-	share/man/lazyxprs_test.1 share/man/lazygurobi_test.1 \
-	share/man/lazyglpk_test.1
+	lib/pkgconfig/lazyglpk.pc share/man/man1/lazycplex_test.1 \
+	share/man/man1/lazyxprs_test.1 \
+	share/man/man1/lazygurobi_test.1 \
+	share/man/man1/lazyglpk_test.1
 CONFIG_CLEAN_VPATH_FILES =
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
@@ -365,10 +366,10 @@ dist_data_DATA = share/stublib.sh \
                  share/package_windows.sh \
                  share/lazylpsolverlibs.nsi
 
-man1_MANS = share/man/lazycplex_test.1 \
-            share/man/lazyxprs_test.1 \
-            share/man/lazygurobi_test.1 \
-            share/man/lazyglpk_test.1
+man1_MANS = share/man/man1/lazycplex_test.1 \
+            share/man/man1/lazyxprs_test.1 \
+            share/man/man1/lazygurobi_test.1 \
+            share/man/man1/lazyglpk_test.1
 
 all: all-am
 
@@ -416,13 +417,13 @@ lib/pkgconfig/lazygurobi.pc: $(top_builddir)/config.status $(top_srcdir)/lib/pkg
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 lib/pkgconfig/lazyglpk.pc: $(top_builddir)/config.status $(top_srcdir)/lib/pkgconfig/lazyglpk.pc.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
-share/man/lazycplex_test.1: $(top_builddir)/config.status $(top_srcdir)/share/man/lazycplex_test.1.in
+share/man/man1/lazycplex_test.1: $(top_builddir)/config.status $(top_srcdir)/share/man/man1/lazycplex_test.1.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
-share/man/lazyxprs_test.1: $(top_builddir)/config.status $(top_srcdir)/share/man/lazyxprs_test.1.in
+share/man/man1/lazyxprs_test.1: $(top_builddir)/config.status $(top_srcdir)/share/man/man1/lazyxprs_test.1.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
-share/man/lazygurobi_test.1: $(top_builddir)/config.status $(top_srcdir)/share/man/lazygurobi_test.1.in
+share/man/man1/lazygurobi_test.1: $(top_builddir)/config.status $(top_srcdir)/share/man/man1/lazygurobi_test.1.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
-share/man/lazyglpk_test.1: $(top_builddir)/config.status $(top_srcdir)/share/man/lazyglpk_test.1.in
+share/man/man1/lazyglpk_test.1: $(top_builddir)/config.status $(top_srcdir)/share/man/man1/lazyglpk_test.1.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 install-libLTLIBRARIES: $(lib_LTLIBRARIES)
 	@$(NORMAL_INSTALL)
