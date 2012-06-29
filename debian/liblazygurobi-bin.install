@@ -1,2 +1,2 @@
 usr/bin/*lazygurobi*
-share/man/*lazygurobi*
+usr/share/man/man1/*lazygurobi*

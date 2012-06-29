@@ -1,2 +1,2 @@
 usr/bin/*lazyglpk*
-share/man/*lazyglpk*
+usr/share/man/man1/*lazyglpk*
