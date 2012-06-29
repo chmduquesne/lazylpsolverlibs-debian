@@ -164,3 +164,48 @@ Description: libraries that proxy function calls to commercial lp solvers
  This package contains the lazyxprs part of lazylpsolverlibs -- debugging
  symbols for the library
 
+Package: liblazyglpk-dev
+Section: libdevel
+Architecture: any
+Depends: liblazyglpk0 (= ${binary:Version}), ${misc:Depends}
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazyglpk part of lazylpsolverlibs -- library and
+ headers
+
+Package: liblazyglpk-bin
+Section: libdevel
+Architecture: any
+Depends: liblazyglpk0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazyglpk part of lazylpsolverlibs -- binary tester
+
+Package: liblazyglpk0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazyglpk part of lazylpsolverlibs -- library only
+
+Package: liblazyglpk0-dbg
+Section: debug
+Architecture: any
+Depends: liblazyglpk0 (= ${binary:Version}), ${misc:Depends}
+Description: libraries that proxy function calls to commercial lp solvers
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazyglpk part of lazylpsolverlibs -- debugging
+ symbols for the library
