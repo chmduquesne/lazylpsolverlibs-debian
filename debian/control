@@ -23,6 +23,7 @@ Description: libraries that proxy function calls to commercial lp solvers
 Package: liblazylpsolverlibs0
 Section: libs
 Architecture: any
+Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: libraries for lazylpsolverlibs
  lazylpsolverlibs offers libraries that can be used as a replacement to
