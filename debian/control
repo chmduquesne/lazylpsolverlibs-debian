@@ -1,7 +1,6 @@
 Source: lazylpsolverlibs
 Priority: extra
 Maintainer: Christophe-Marie Duquesne <chmd@chmd.fr>
-Pre-Depends: multiarch-support
 Build-Depends: debhelper (>= 9.0.0), autotools-dev, libglib2.0-dev
 Standards-Version: 3.9.3
 Section: libs
@@ -21,7 +20,6 @@ Description: libraries that proxy function calls to commercial lp solvers
  This package contains the developer files
 
 Package: liblazylpsolverlibs0
-Section: libs
 Architecture: any
 Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}
