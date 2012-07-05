@@ -1,6 +1,8 @@
 usr/include/lazylpsolverlibs/ilcplex/*
 usr/include/lazylpsolverlibs/*
 usr/lib/*-*-*/pkgconfig/*
+usr/lib/*-*-*/*.a
+usr/lib/*-*-*/*.so
 usr/bin/*
 usr/share/man/man1/*
 usr/share/lazylpsolverlibs/*
