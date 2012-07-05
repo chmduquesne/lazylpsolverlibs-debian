@@ -1,7 +1,7 @@
 Source: lazylpsolverlibs
 Priority: extra
 Maintainer: Christophe-Marie Duquesne <chmd@chmd.fr>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, libglib2.0-dev
+Build-Depends: debhelper (>= 9.0.0), autotools-dev, libglib2.0-dev
 Standards-Version: 3.9.3
 Section: libs
 Homepage: http://code.google.com/p/lazylpsolverlibs/
@@ -11,7 +11,7 @@ Vcs-Browser: https://github.com/chmduquesne/lazylpsolverlibs-debian
 Package: liblazylpsolverlibs-dev
 Section: libdevel
 Architecture: any
-Depends: liblazylpsolverlibs0 (= ${binary:Version}), ${misc:Depends}
+Depends: liblazylpsolverlibs0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
  lazylpsolverlibs offers libraries that can be used as a link replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
