@@ -22,7 +22,7 @@ Description: libraries that proxy function calls to commercial lp solvers
 Package: liblazylpsolverlibs0
 Architecture: any
 Pre-Depends: multiarch-support
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
 Description: libraries for lazylpsolverlibs
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
