@@ -11,14 +11,3 @@
 
 %:
 	dh $@
-
-.PHONY: override_dh_strip
-override_dh_strip:
-	dh_strip -pliblazycplex0 --dbg-package=liblazycplex0-dbg
-	dh_strip -pliblazygurobi0 --dbg-package=liblazygurobi0-dbg
-	dh_strip -pliblazyxprs0 --dbg-package=liblazyxprs0-dbg
-	dh_strip -pliblazyglpk0 --dbg-package=liblazyglpk0-dbg
-	dh_strip -pliblazycplex-bin
-	dh_strip -pliblazygurobi-bin
-	dh_strip -pliblazyxprs-bin
-	dh_strip -pliblazyglpk-bin
