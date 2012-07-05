@@ -26,7 +26,7 @@ Description: libraries that proxy function calls to commercial lp solvers
 Package: liblazycplex-dev
 Section: libdevel
 Architecture: any
-Depends: liblazycplex0 (= ${binary:Version}), ${misc:Depends}
+Depends: liblazycplex0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
@@ -49,7 +49,7 @@ Description: libraries that proxy function calls to commercial lp solvers
 Package: liblazygurobi-dev
 Section: libdevel
 Architecture: any
-Depends: liblazygurobi0 (= ${binary:Version}), ${misc:Depends}
+Depends: liblazygurobi0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
@@ -72,7 +72,7 @@ Description: libraries that proxy function calls to commercial lp solvers
 Package: liblazyxprs-dev
 Section: libdevel
 Architecture: any
-Depends: liblazyxprs0 (= ${binary:Version}), ${misc:Depends}
+Depends: liblazyxprs0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
@@ -95,7 +95,7 @@ Description: libraries that proxy function calls to commercial lp solvers
 Package: liblazyglpk-dev
 Section: libdevel
 Architecture: any
-Depends: liblazyglpk0 (= ${binary:Version}), ${misc:Depends}
+Depends: liblazyglpk0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: libraries that proxy function calls to commercial lp solvers
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
