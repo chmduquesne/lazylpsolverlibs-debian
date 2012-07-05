@@ -1,4 +1,4 @@
 usr/include/lazylpsolverlibs/glpk.h
-usr/lib/pkgconfig/lazyglpk.pc
+usr/lib/*-*-*/pkgconfig/lazyglpk.pc
 usr/bin/*lazyglpk*
 usr/share/man/man1/*lazyglpk*

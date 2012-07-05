@@ -1,4 +1,4 @@
 usr/include/lazylpsolverlibs/ilcplex/cplex.h
-usr/lib/pkgconfig/lazycplex.pc
+usr/lib/*-*-*/pkgconfig/lazycplex.pc
 usr/bin/*lazycplex*
 usr/share/man/man1/*lazycplex*

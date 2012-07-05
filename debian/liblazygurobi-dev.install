@@ -1,1 +1,4 @@
 /usr/include/lazylpsolverlibs/gurobi_c.h
+usr/lib/*-*-*/pkgconfig/lazygurobi.pc
+usr/bin/*lazygurobi*
+usr/share/man/man1/*lazygurobi*
