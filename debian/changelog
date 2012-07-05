@@ -1,4 +1,4 @@
-lazylpsolverlibs (0.1.50-1) unstable; urgency=low
+lazylpsolverlibs (1.0.0-1) unstable; urgency=low
 
   * Initial release (Closes: #679504)
 
