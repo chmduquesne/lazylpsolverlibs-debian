@@ -11,21 +11,58 @@ Vcs-Browser: https://github.com/chmduquesne/lazylpsolverlibs-debian
 Package: liblazylpsolverlibs-dev
 Section: libdevel
 Architecture: any
-Depends: liblazylpsolverlibs0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends},
+         liblazycplex1 (= ${binary:Version}),
+         liblazyxprs1 (= ${binary:Version}),
+         liblazygurobi1 (= ${binary:Version}),
+         liblazyglpk1 (= ${binary:Version}),
 Description: libraries that proxy function calls to commercial lp solvers
  lazylpsolverlibs offers libraries that can be used as a link replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
  with support for these solvers.
  .
- This package contains the developer files
+ This package contains the developer files.
 
-Package: liblazylpsolverlibs0
+Package: liblazycplex1
 Architecture: any
 Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
-Description: libraries for lazylpsolverlibs
+Description: the lazycplex component of lazylpsolverlibs
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
  with support for these solvers, but can be useful in other context.
  .
- This package contains only the libraries
+ This package contains the lazycplex library.
+
+Package: liblazyxprs1
+Architecture: any
+Pre-Depends: multiarch-support
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
+Description: the lazyxprs component of lazylpsolverlibs
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazyxprs library.
+
+Package: liblazygurobi1
+Architecture: any
+Pre-Depends: multiarch-support
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
+Description: the lazygurobi component of lazylpsolverlibs
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazygurobi library.
+
+Package: liblazyglpk1
+Architecture: any
+Pre-Depends: multiarch-support
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
+Description: the lazyglpk component of lazylpsolverlibs
+ lazylpsolverlibs offers libraries that can be used as a replacement to
+ commercial lp solvers. It has been designed to make coin-osi easier to build
+ with support for these solvers, but can be useful in other context.
+ .
+ This package contains the lazyglpk library.

@@ -5,4 +5,3 @@ usr/lib/*-*-*/*.a
 usr/lib/*-*-*/*.so
 usr/bin/*
 usr/share/man/man1/*
-usr/share/lazylpsolverlibs/*
