@@ -27,7 +27,7 @@ Package: liblazycplex1
 Architecture: any
 Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
-Description: the lazycplex component of lazylpsolverlibs
+Description: lazycplex component of lazylpsolverlibs
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
  with support for these solvers, but can be useful in other context.
@@ -38,7 +38,7 @@ Package: liblazyxprs1
 Architecture: any
 Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
-Description: the lazyxprs component of lazylpsolverlibs
+Description: lazyxprs component of lazylpsolverlibs
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
  with support for these solvers, but can be useful in other context.
@@ -49,7 +49,7 @@ Package: liblazygurobi1
 Architecture: any
 Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
-Description: the lazygurobi component of lazylpsolverlibs
+Description: lazygurobi component of lazylpsolverlibs
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
  with support for these solvers, but can be useful in other context.
@@ -60,7 +60,7 @@ Package: liblazyglpk1
 Architecture: any
 Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
-Description: the lazyglpk component of lazylpsolverlibs
+Description: lazyglpk component of lazylpsolverlibs
  lazylpsolverlibs offers libraries that can be used as a replacement to
  commercial lp solvers. It has been designed to make coin-osi easier to build
  with support for these solvers, but can be useful in other context.
