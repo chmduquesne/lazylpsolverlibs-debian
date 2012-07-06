@@ -1,1 +1,1 @@
-usr/lib/*-*-*/liblazycplex.so.*
+usr/lib/*/liblazycplex.so.*

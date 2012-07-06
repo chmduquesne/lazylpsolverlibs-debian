@@ -1,1 +1,1 @@
-usr/lib/*-*-*/liblazygurobi.so.*
+usr/lib/*/liblazygurobi.so.*
